@@ -5,6 +5,7 @@
 kk = 0
 nt = [];//총 개수
 pt = []
+a = [3.141592, 3.141592, 3.141592, 3.141592, 3.141592, 3.141592, 3.141592, 3.141592]
 for(i=0; i<=100000000; i++){
   x = Math.random()
   y = Math.random()
@@ -35,14 +36,14 @@ datainfo = {
     label : 'padd',
     backgroundColor : ['gray', 'red'],
     borderColor : 'blue',
-    data : nt,
+    data : pt,
     tension : 0.5
     },
     {
-    label : 'Answer',
+    label : 'Pi',
     backgroundColor : ['gray', 'red'],
     borderColor : 'green',
-    data : pt,
+    data : a,
     tension : 0.5
     },
   ]
