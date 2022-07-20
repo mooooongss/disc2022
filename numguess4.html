@@ -15,7 +15,9 @@ a = []; b = []; c = []
 k = 0
 hint = ""
 while (true) {
-  a[k] = prompt(str + a + " " + hint)
+  x = prompt(str + a + " " + hint)
+  if(x == null) break
+  a[k] = x
   c[k] = num
   b[k] = k+1
   if (num == a[k]) {
