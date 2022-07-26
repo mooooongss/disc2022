@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>if</title>
+</head>
+<body>
+<script>
+var my_age = 21
+var i = prompt("귀하의 나이는 어떻게 되시나요?")
+if(i > 21){
+  document.write("안녕하십니까~ 형님")}
+else if(i < 21){
+  document.write("반가워 동상~")}
+else{
+  document.write("반갑네 친구~")}
+</script>
+</body>
+</html>
