@@ -1,0 +1,10 @@
+<body>
+<h1 id = "title">여기</h1>
+<script>
+var title = document.getElementById('title')
+alert(title.innerHTML)
+title.style.color = 'white'
+title.style.background = 'orange'
+title.innerHTML = "새 내용~"
+</script>
+</body>
