@@ -1,0 +1,14 @@
+<html><head></head>
+<body>
+<script>
+a = [1, 2, 3]
+for(i=0; i < a.length; i++){
+  document.write(i + ":" + a[i] + "<br/>")}
+document.write("<hr>")
+a[5] = "Hi~"
+for(i = 0; i < a.length; i++){
+  document.write(i + ":" + a[i] + "<br/>")}
+document.write("<hr>" + a.toString())
+</script>
+</body>
+</html>
