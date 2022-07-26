@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>if</title>
+</head>
+<body>
+<script>
+var i = 5
+if(i == 5){
+  document.write("i는 5와 같다.")}
+else{
+  document.write("i는 5와 다르다.")}
+</script>
+</body>
+</html>
