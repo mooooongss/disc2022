@@ -1,0 +1,12 @@
+<html><head></head>
+<body>
+<script>
+function say(){
+  alert('a + b를 더했습니다.')}
+function sum(a, b, yourfunc){
+  yourfunc();
+  return a+b;}
+  // 이름 있는 callback 함수 사용
+var r = sum(10, 20, say)
+document.write(r)
+</script></body></html>
