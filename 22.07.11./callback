@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function sum(a, b, callback){
+  callback();
+  returtn a+b;
+}
+
+var r = sum(10, 20, function(){
+  alert('a + b를 더했습니다.')})
+document.write(r)
+</script>
+</body>
+</html>
