@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>while</title>
+</head>
+<body>
+<scrpit>
+var num = Math.floor(Math.random() * 100)
+document.write(num)
+while(true){
+  val = prompt("0-99 사이의 값을 입력하시요." + num)
+  if(num == val){
+    document.write("Congratulation~ You guessed it")
+    break}
+  else{
+    document.write("It's different.")}
+</script>
+</body>
+</html>
