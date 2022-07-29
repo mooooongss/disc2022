@@ -1,0 +1,24 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head><body>
+<script>
+const mydata = [1, 2, 3, 4, 5]
+var a = Math.floor(Math.random()*100)
+for(i = 1; i < a; i++){
+  mydata[4+i] = Math.floor(Math.random()*100)
+}
+for(j = 0; j < mydata.length; j++){
+  document.write(mydata[j] + "<br/>")
+}
+const result = mydata.reduce(function add(sum, currValue){
+  return sum + currValue}, 0);
+console.log(result)
+avg = result/mydata.length
+mydata[4 + a] = 4 + a
+mydata[5 + a] = result
+mydata[6 + a] = avg
+document.write("배열의 개수: " + mydata[4 + a] + "<br/>" + "배열의 총합: " + mydata[5 + a] + "<br/>" + "배열의 평균: " + mydata[6 + a] + "<br/>")
+alert("배열의 개수: " + mydata[4 + a] + "," + "배열의 총합: " + mydata[5 + a] + "," + "배열의 평균: " + mydata[6 + a] + ",")
+</script>
+</body></html>

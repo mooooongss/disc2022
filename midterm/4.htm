@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<button id="add-btn">버튼</button>
+	<ul id='list'>
+	</ul>
+	<style>
+		#add-btn{
+			padding: 5px 10px;
+			border: 0;
+			background: #999; color: white;
+			border-radius: 5px;
+		}
+		ul{ 
+			padding: 0; 
+			list-style-position: inside;
+		}
+		li{
+			border-bottom: 1px solid #999;
+			padding: 5px 0;
+		}
+		.active{ background: #f80; }
+	</style>
+	<script>
+  	window.onload = function(){
+     	var list = document.getElementById('list');
+    	var li = list.getElementsByTagName('li');
+    	var addBtn = document.getElementById('add-btn');
+    	
+    	list.addEventListener('click', activeItem); 
+    
+    	function activeItem(event){ 
+    		if(event.target.nodeName == 'LI'){
+    			for(var i = 0; i < event.target.parentNode.children.length; i++){
+    				event.target.parentNode.children[i].removeAttribute('class');
+    			}
+    			event.target.setAttribute('class', 'active'); 	
+    		}
+    	}
+    	addBtn.addEventListener('click', function(){
+    		var txt = prompt('제목 입력');
+    		list.innerHTML += '<li>' + txt + '</li>';
+    	})
+    }
+  </script>
+</head><body></body></html>
