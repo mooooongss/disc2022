@@ -1,0 +1,22 @@
+<html><head>
+</head><body>
+<div style="width:80vw"><h1>CBRT of 10</h1>
+<script>
+cbrt10try = []
+trialnum = []
+cbrt10val = []
+high = 3
+low = 2
+delta = 0.00000001
+for ( k=0 ; k<100 ; k++ ) {
+  cbrt10try[k] = (high + low)/2
+  cbrx = cbrt10try[k] * cbrt10try[k] * cbrt10try[k]
+  trialnum[k] = k+1
+  cbrt10val[k] = Math.cbrt(10)
+  if ( cbrx > 10 ) high = cbrt10try[k]
+  else if ( cbrx < 10 ) low = cbrt10try[k]
+  if ( Math.abs(10-cbrx) < delta ) break
+}
+document.querySelector("h1").innerHTML += " => " + cbrt10try[k] + " & Trial = " + (k + 1)
+</script>
+</body></html>
