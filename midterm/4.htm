@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<button id="add-btn">click</button>
+	<button id="add-btn">button</button>
 	<ul id='list'>
 	</ul>
 	<style>
@@ -38,7 +38,7 @@
     		}
     	}
     	addBtn.addEventListener('click', function(){
-    		var txt = prompt('Add new text');
+    		var txt = prompt('write what you want');
     		list.innerHTML += '<li>' + txt + '</li>';
     	})
     }
