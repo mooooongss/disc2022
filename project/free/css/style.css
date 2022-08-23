@@ -46,7 +46,7 @@ header h1{
 }
 .page > h1{ 
 	padding: 20px; 
-	color: black;
+	color: white;
 }
 .wrapper > .page:nth-child(1){
 	background-image: url('../images/img01.jpg');
